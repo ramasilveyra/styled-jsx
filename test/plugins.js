@@ -79,6 +79,11 @@ test('applies plugins', async t => {
   t.snapshot(code)
 })
 
+test('when using plugins it should not throw with nesting', async t => {
+  const { code } = await transform('./fixtures/css-nesting.js')
+  t.snapshot(code)
+})
+
 test('passes options to plugins', async t => {
   const { code } = await transform('./fixtures/with-plugins.js', {
     plugins: [
