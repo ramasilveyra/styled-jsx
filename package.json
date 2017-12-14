@@ -92,5 +92,8 @@
   },
   "peerDependencies": {
     "react": "15.x.x || 16.x.x"
+  },
+  "gitpkg": {
+    "registry": "git@github.com:ramasilveyra/public-registry.git"
   }
 }
